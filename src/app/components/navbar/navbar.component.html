@@ -1,0 +1,25 @@
+<div class="navbar-container">
+  <div class="center-container">
+    <div class="center-space-between-content">
+      <div class="left-container">
+        <div class="logo-container">
+          <a [routerLink]="['']" class="logo-link">
+            <img class="logo-img" src="assets/img/logo.png" alt="Foundations IT">
+          </a>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="action-btn-container">
+          <button mat-button class="action-btn main-btn hidden-mobile">Schedule Now</button>
+
+          <button class="menu-btn hidden-desktop" (click)="onToggleSidebar.emit()" mat-button>
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+</div>

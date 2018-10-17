@@ -1,0 +1,16 @@
+<div #mainAppContainer class="main-app-container">
+  <ng-container>
+    <mat-sidenav-container class="sidenav-page-content-container">
+
+      <mat-sidenav #sidenav [mode]="mode" position="end" class="sidenav">
+        <app-sidebar></app-sidebar>
+      </mat-sidenav>
+
+      <div class="main-content-container">
+        <app-navbar (onToggleSidebar)="sidenav.toggle()"></app-navbar>
+        <router-outlet></router-outlet>
+      </div>
+
+    </mat-sidenav-container>
+  </ng-container>
+</div>

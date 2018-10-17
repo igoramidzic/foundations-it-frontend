@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700");
+
+$primary_color: #339fff;
+$primary_background_color: #f7f7f7;
+$text_color_light: #b3b3b3;
+$text_color_dark: #3c3c3c;
+$success_color: #25c646;
+$danger_color: #ea0027;
+$pending_color: #efe934;
+
+$primary_font: "Nunito Sans", sans-serif;
+
+.center-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  .center-space-between-content {
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .bottom-space-between-content {
+    align-items: baseline;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .vertical-center-space-between-content {
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .center-left-content {
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: flex-start;
+  }
+
+  .center-left-top-content {
+    align-items: flex-start;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hidden-desktop {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hidden-mobile {
+    display: none !important;
+  }
+}

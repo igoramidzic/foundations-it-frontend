@@ -1,0 +1,60 @@
+@import "../../app.component.scss";
+
+.navbar-container {
+  font-family: $primary_font;
+
+  .left-container {
+    .logo-container {
+      .logo-link {
+        display: inline-block;
+      }
+      .logo-img {
+        max-width: 200px;
+        cursor: pointer;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .right-container {
+    .action-btn-container {
+      .main-btn {
+        border: none;
+        background-color: $primary_color;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 15px;
+      }
+
+      .mat-button,
+      .mat-flat-button,
+      .mat-icon-button,
+      .mat-stroked-button {
+        min-width: 0;
+      }
+
+      .menu-btn {
+        font-size: 20px;
+        color: $text_color_light;
+        outline: none;
+        .fa-bars {
+          position: relative;
+          top: -1px;
+        }
+      }
+    }
+  }
+}
+
+// Padding
+@media only screen and (min-width: 981px) {
+  .navbar-container {
+    padding: 12px 24px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .navbar-container {
+    padding: 12px;
+  }
+}
