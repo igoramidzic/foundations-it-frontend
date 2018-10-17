@@ -1,0 +1,50 @@
+@import "../../app.component.scss";
+
+.sidebar-container {
+  font-family: $primary_font;
+  padding: 24px 0;
+  min-height: 100%;
+
+  .logo-container {
+    text-align: center;
+    margin-bottom: 36px;
+    width: 100%;
+    .logo-img {
+      width: 170px;
+      outline: none;
+      cursor: pointer;
+      padding: 10px;
+      &:hover {
+        background-color: $primary_background_color;
+      }
+    }
+  }
+
+  .link-list-container {
+    margin-bottom: 12px;
+    width: 100%;
+    .link-list {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      .link-item {
+        padding: 12px 24px;
+        font-size: 12px;
+        font-weight: 400;
+        color: $text_color_light;
+        cursor: pointer;
+        outline: none;
+        letter-spacing: 0.5px;
+        &:hover {
+          background-color: $primary_background_color;
+        }
+      }
+      .active {
+        -webkit-box-shadow: inset 3px 0px 0px 0px $primary_color;
+        -moz-box-shadow: inset 3px 0px 0px 0px $primary_color;
+        box-shadow: inset 3px 0px 0px 0px $primary_color;
+        color: $text_color_dark;
+      }
+    }
+  }
+}
