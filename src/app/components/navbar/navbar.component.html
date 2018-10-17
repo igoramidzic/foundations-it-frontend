@@ -26,7 +26,8 @@
       </div>
       <div class="right-container">
         <div class="action-btn-container">
-          <button mat-button class="action-btn main-btn hidden-mobile">Schedule Now</button>
+          <button onclick="Calendly.showPopupWidget('https://calendly.com/weswilson/30min');return false;" mat-button
+            class="action-btn main-btn hidden-mobile">Schedule Now</button>
 
           <button class="menu-btn hidden-desktop" (click)="onToggleSidebar.emit()" mat-button>
             <i class="fa fa-bars"></i>

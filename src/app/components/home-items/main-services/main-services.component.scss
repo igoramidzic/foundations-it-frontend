@@ -1,0 +1,48 @@
+@import "../../../app.component.scss";
+
+.main-services-section {
+  background-color: rgb(35, 35, 70);
+  margin-bottom: 500px;
+  .main-services-container {
+    max-width: 900px;
+    margin: auto;
+    font-family: $primary_font;
+    transition: 0.25s;
+  }
+
+  .grid-container {
+    display: grid;
+  }
+
+  .my-card {
+    background-color: $primary_background_color;
+    padding: 12px;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (min-width: 941px) {
+  .main-services-container {
+    padding: 110px 24px;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .main-services-container {
+    padding: 85px 24px;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  .grid-system-1 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 24px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .grid-system-1 {
+    grid-template-columns: 1fr;
+    grid-gap: 24px;
+  }
+}

@@ -1,0 +1,77 @@
+@import "../../../app.component.scss";
+
+.main-hero-section {
+  max-width: 900px;
+  margin: auto;
+  font-family: $primary_font;
+  transition: 0.25s;
+}
+
+.left-container {
+  .home-header {
+    color: $text_color_dark;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0 0 4px 0;
+    line-height: 1.3;
+    transition: 0.25s;
+  }
+
+  .home-detail {
+    color: $text_color_dark;
+    line-height: 1.3;
+    margin: 0 0 32px 0;
+    font-weight: 300;
+    transition: 0.25s;
+  }
+
+  .main-btn {
+    border: none;
+    background-color: $primary_color;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 15px;
+  }
+}
+
+.right-container {
+  .home-hero-img {
+    max-width: 500px;
+  }
+}
+
+@media only screen and (min-width: 941px) {
+  .main-hero-section {
+    padding: 90px 24px;
+
+    .home-header {
+      font-size: 32px;
+    }
+
+    .home-detail {
+      font-size: 19px;
+    }
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .main-hero-section {
+    padding: 75px 24px;
+
+    .home-header {
+      font-size: 28px;
+    }
+
+    .home-detail {
+      font-size: 18px;
+    }
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .main-hero-section {
+    .left-container {
+      min-width: 280px;
+    }
+  }
+}

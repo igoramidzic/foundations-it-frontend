@@ -10,6 +10,8 @@ import { HomeComponent } from "./pages/home/home.component";
 import { MainLayoutComponent } from "./components/main-layout/main-layout.component";
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { NavbarComponent } from "./components/navbar/navbar.component";
+import { MainServicesComponent } from "./components/home-items/main-services/main-services.component";
+import { MainHeroComponent } from "./components/home-items/main-hero/main-hero.component";
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { NavbarComponent } from "./components/navbar/navbar.component";
     HomeComponent,
     MainLayoutComponent,
     SidebarComponent,
-    NavbarComponent
+    NavbarComponent,
+    MainServicesComponent,
+    MainHeroComponent
   ],
   imports: [
     BrowserModule,
