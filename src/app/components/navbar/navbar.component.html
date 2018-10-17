@@ -2,11 +2,27 @@
   <div class="center-container">
     <div class="center-space-between-content">
       <div class="left-container">
-        <div class="logo-container">
-          <a [routerLink]="['']" class="logo-link">
-            <img class="logo-img" src="assets/img/logo.png" alt="Foundations IT">
-          </a>
+        <div class="center-container">
+          <div class="center-left-content">
+            <div class="logo-container">
+              <a [routerLink]="['']" class="logo-link">
+                <img class="logo-img" src="assets/img/logo.png" alt="Foundations IT">
+              </a>
+            </div>
+
+            <div class="nav-links-container hidden-mobile">
+              <ul class="nav-links">
+                <li class="nav-link-item"><a [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }"
+                    class="nav-link" [routerLink]="['']">Home</a></li>
+                <li class="nav-link-item"><a [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }"
+                    class="nav-link" [routerLink]="['portfolio']">Portfolio</a></li>
+                <li class="nav-link-item"><a [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }"
+                    class="nav-link" [routerLink]="['contact']">Contact</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
+
       </div>
       <div class="right-container">
         <div class="action-btn-container">

@@ -2,6 +2,7 @@
 
 .navbar-container {
   font-family: $primary_font;
+  max-width: 1280px;
 
   .left-container {
     .logo-container {
@@ -12,6 +13,34 @@
         max-width: 200px;
         cursor: pointer;
         vertical-align: middle;
+      }
+    }
+
+    .nav-links-container {
+      margin-left: 64px;
+      .nav-links {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        .nav-link-item {
+          display: inline-block;
+          margin-right: 32px;
+          border: 2px solid transparent;
+          .nav-link {
+            text-decoration: none;
+            color: $text_color_dark;
+            font-size: 16px;
+            font-weight: 400;
+            padding: 3px 0;
+
+            &:hover {
+              border-bottom: 2px solid $primary_color;
+            }
+          }
+          .active {
+            border-bottom: 2px solid $primary_color;
+          }
+        }
       }
     }
   }
